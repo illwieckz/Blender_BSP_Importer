@@ -76,6 +76,7 @@ class vanilla_shader_stage:
         stage.skip_alpha = False
     
         stage.stage_functions = {   "map": stage.setDiffuse,
+                                    "diffusemap" : stage.setDiffuse,
                                     "clampmap" : stage.setDiffuse,
                                     "blendfunc": stage.setBlend,
                                     "alphafunc": stage.setAlphaClip,
